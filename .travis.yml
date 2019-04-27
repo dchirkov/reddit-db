@@ -2,7 +2,7 @@ language: python
 python:
 - '3.6'
 install:
-- pip install ansible==2.3.0 molecule apache-libcloud requests google-auth pycrypto
+- pip install ansible==2.3.0 molecule apache-libcloud testinfra
 env:
   matrix:
   - GCE_CREDENTIALS_FILE="$(pwd)/credentials.json"
